@@ -12,4 +12,5 @@ public class MyConstants {
 
     public static final String SEND = "/sendMail";
     public static final String SEND_WITH_ATTACHMENT ="/sendAtachment" ;
+    public static final String SEND_HTML_EMAIL ="/sendHtmlEmail" ;
 }
