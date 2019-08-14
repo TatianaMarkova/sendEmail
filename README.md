@@ -4,9 +4,10 @@
 написан с использованием Spring Mail
 
 для работы в классе MyConstants изенить 
+  
     // Replace with your email here:
     public static final String MY_EMAIL = "emailFrom";
-
+    
     // Replace password!!
     public static final String MY_PASSWORD = "password";
 
