@@ -3,20 +3,20 @@ package com.example.email;
 
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.io.File;
+
+
 
 
 @RestController
 public class SimpleEmailExampleController {
+
+
 
     @Autowired
      JavaMailSender emailSender;
@@ -45,4 +45,5 @@ public class SimpleEmailExampleController {
 
         return "Email Sent!";
     }
+
 }
