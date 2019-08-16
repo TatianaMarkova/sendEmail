@@ -1,0 +1,147 @@
+2019-08-15 12:04:21.088  INFO MBP-Smilyk --- [           main] c.e.e.EMailApplication                   : Starting EMailApplication on MBP-Smilyk with PID 91156 (/Users/smilyk/IdeaProjects/e-mail/target/classes started by smilyk in /Users/smilyk/IdeaProjects/e-mail)
+2019-08-15 12:04:21.095  INFO MBP-Smilyk --- [           main] c.e.e.EMailApplication                   : No active profile set, falling back to default profiles: default
+2019-08-15 12:04:22.092  INFO MBP-Smilyk --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8080 (http)
+2019-08-15 12:04:22.117  INFO MBP-Smilyk --- [           main] o.a.c.h.Http11NioProtocol                : Initializing ProtocolHandler ["http-nio-8080"]
+2019-08-15 12:04:22.126  INFO MBP-Smilyk --- [           main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-08-15 12:04:22.126  INFO MBP-Smilyk --- [           main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-15 12:04:22.212  INFO MBP-Smilyk --- [           main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2019-08-15 12:04:22.212 DEBUG MBP-Smilyk --- [           main] o.s.w.c.ContextLoader                    : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-08-15 12:04:22.212  INFO MBP-Smilyk --- [           main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1026 ms
+2019-08-15 12:04:22.333 DEBUG MBP-Smilyk --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-08-15 12:04:22.430  INFO MBP-Smilyk --- [           main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-15 12:04:22.446 DEBUG MBP-Smilyk --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-08-15 12:04:22.505 DEBUG MBP-Smilyk --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2019-08-15 12:04:22.514 DEBUG MBP-Smilyk --- [           main] o.s.w.s.h.SimpleUrlHandlerMapping        : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-08-15 12:04:22.521 DEBUG MBP-Smilyk --- [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-08-15 12:04:22.598  INFO MBP-Smilyk --- [           main] o.a.c.h.Http11NioProtocol                : Starting ProtocolHandler ["http-nio-8080"]
+2019-08-15 12:04:22.635  INFO MBP-Smilyk --- [           main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8080 (http) with context path ''
+2019-08-15 12:04:22.638  INFO MBP-Smilyk --- [           main] c.e.e.EMailApplication                   : Started EMailApplication in 2.071 seconds (JVM running for 3.212)
+2019-08-15 12:04:22.639  INFO MBP-Smilyk --- [           main] c.e.e.EMailApplication                   : Info log
+2019-08-15 12:04:22.639  WARN MBP-Smilyk --- [           main] c.e.e.EMailApplication                   : Hey, This is a warning!
+2019-08-15 12:04:22.640 ERROR MBP-Smilyk --- [           main] c.e.e.EMailApplication                   : Oops! We have an Error. OK
+2019-08-15 12:04:22.640 FATAL MBP-Smilyk --- [           main] c.e.e.EMailApplication                   : Damn! Fatal error. Please fix me.
+2019-08-15 12:04:52.869  INFO MBP-Smilyk --- [nio-8080-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-08-15 12:04:52.870  INFO MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-08-15 12:04:52.870 DEBUG MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Detected StandardServletMultipartResolver
+2019-08-15 12:04:52.883 DEBUG MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-08-15 12:04:52.883  INFO MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 13 ms
+2019-08-15 12:04:52.895 DEBUG MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : GET "/sendHtmlEmail", parameters={}
+2019-08-15 12:04:52.905 DEBUG MBP-Smilyk --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to java.lang.String com.example.email.SimpleEmailExampleController.sendSimpleEmail() throws javax.mail.MessagingException
+2019-08-15 12:04:54.405 DEBUG MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Failed to complete request: org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 7sm741225wmj.46 - gsmtp
+
+2019-08-15 12:04:54.408 ERROR MBP-Smilyk --- [nio-8080-exec-1] o.a.c.c.C.[.[.[.[dispatcherServlet]      : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.mail.MailAuthenticationException: Authentication failed; nested exception is javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 7sm741225wmj.46 - gsmtp
+] with root cause
+javax.mail.AuthenticationFailedException: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 7sm741225wmj.46 - gsmtp
+
+	at com.sun.mail.smtp.SMTPTransport$Authenticator.authenticate(SMTPTransport.java:965)
+	at com.sun.mail.smtp.SMTPTransport.authenticate(SMTPTransport.java:876)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:780)
+	at javax.mail.Service.connect(Service.java:366)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:517)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:436)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:360)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:355)
+	at com.example.email.SimpleEmailExampleController.sendSimpleEmail(SimpleEmailExampleController.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1039)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:118)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:853)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1587)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-08-15 12:04:54.416 DEBUG MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : "ERROR" dispatch for GET "/error", parameters={}
+2019-08-15 12:04:54.418 DEBUG MBP-Smilyk --- [nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-08-15 12:04:54.479 DEBUG MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-08-15 12:04:54.481 DEBUG MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 15 12:04:54 IDT 2019, status=500, error=Internal Server Error, message=Authentica (truncated)...]
+2019-08-15 12:04:54.571 DEBUG MBP-Smilyk --- [nio-8080-exec-1] o.s.w.s.DispatcherServlet                : Exiting from "ERROR" dispatch, status 500
+2019-08-15 12:05:30.116 DEBUG MBP-Smilyk --- [nio-8080-exec-4] o.s.w.s.DispatcherServlet                : GET "/sendHtmlEmail", parameters={}
+2019-08-15 12:05:30.117 DEBUG MBP-Smilyk --- [nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to java.lang.String com.example.email.SimpleEmailExampleController.sendSimpleEmail() throws javax.mail.MessagingException
+2019-08-15 12:05:32.067 DEBUG MBP-Smilyk --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-08-15 12:05:32.068 DEBUG MBP-Smilyk --- [nio-8080-exec-4] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Email Sent!"]
+2019-08-15 12:05:32.072 DEBUG MBP-Smilyk --- [nio-8080-exec-4] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2019-08-15 12:06:03.991 DEBUG MBP-Smilyk --- [nio-8080-exec-5] o.s.w.s.DispatcherServlet                : GET "/sendHtmlEmail", parameters={}
+2019-08-15 12:06:03.991 DEBUG MBP-Smilyk --- [nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to java.lang.String com.example.email.SimpleEmailExampleController.sendSimpleEmail() throws javax.mail.MessagingException
+2019-08-15 12:06:06.245 DEBUG MBP-Smilyk --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-08-15 12:06:06.245 DEBUG MBP-Smilyk --- [nio-8080-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Email Sent!"]
+2019-08-15 12:06:06.246 DEBUG MBP-Smilyk --- [nio-8080-exec-5] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2019-08-15 12:06:19.438 DEBUG MBP-Smilyk --- [nio-8080-exec-6] o.s.w.s.DispatcherServlet                : GET "/sendHtmlEmail", parameters={}
+2019-08-15 12:06:19.439 DEBUG MBP-Smilyk --- [nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to java.lang.String com.example.email.SimpleEmailExampleController.sendSimpleEmail() throws javax.mail.MessagingException
+2019-08-15 12:06:21.415 DEBUG MBP-Smilyk --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-08-15 12:06:21.415 DEBUG MBP-Smilyk --- [nio-8080-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Email Sent!"]
+2019-08-15 12:06:21.416 DEBUG MBP-Smilyk --- [nio-8080-exec-6] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2019-08-15 12:06:22.294 DEBUG MBP-Smilyk --- [nio-8080-exec-7] o.s.w.s.DispatcherServlet                : GET "/sendHtmlEmail", parameters={}
+2019-08-15 12:06:22.295 DEBUG MBP-Smilyk --- [nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to java.lang.String com.example.email.SimpleEmailExampleController.sendSimpleEmail() throws javax.mail.MessagingException
+2019-08-15 12:06:24.172 DEBUG MBP-Smilyk --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-08-15 12:06:24.176 DEBUG MBP-Smilyk --- [nio-8080-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Email Sent!"]
+2019-08-15 12:06:24.177 DEBUG MBP-Smilyk --- [nio-8080-exec-7] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2019-08-15 12:06:24.962 DEBUG MBP-Smilyk --- [nio-8080-exec-8] o.s.w.s.DispatcherServlet                : GET "/sendHtmlEmail", parameters={}
+2019-08-15 12:06:24.962 DEBUG MBP-Smilyk --- [nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to java.lang.String com.example.email.SimpleEmailExampleController.sendSimpleEmail() throws javax.mail.MessagingException
+2019-08-15 12:06:26.862 DEBUG MBP-Smilyk --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-08-15 12:06:26.862 DEBUG MBP-Smilyk --- [nio-8080-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Email Sent!"]
+2019-08-15 12:06:26.863 DEBUG MBP-Smilyk --- [nio-8080-exec-8] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2019-08-15 12:06:27.695 DEBUG MBP-Smilyk --- [nio-8080-exec-9] o.s.w.s.DispatcherServlet                : GET "/sendHtmlEmail", parameters={}
+2019-08-15 12:06:27.696 DEBUG MBP-Smilyk --- [nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to java.lang.String com.example.email.SimpleEmailExampleController.sendSimpleEmail() throws javax.mail.MessagingException
+2019-08-15 12:06:29.492 DEBUG MBP-Smilyk --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-08-15 12:06:29.492 DEBUG MBP-Smilyk --- [nio-8080-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Email Sent!"]
+2019-08-15 12:06:29.493 DEBUG MBP-Smilyk --- [nio-8080-exec-9] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2019-08-15 12:06:30.360 DEBUG MBP-Smilyk --- [io-8080-exec-10] o.s.w.s.DispatcherServlet                : GET "/sendHtmlEmail", parameters={}
+2019-08-15 12:06:30.360 DEBUG MBP-Smilyk --- [io-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to java.lang.String com.example.email.SimpleEmailExampleController.sendSimpleEmail() throws javax.mail.MessagingException
+2019-08-15 12:06:32.487 DEBUG MBP-Smilyk --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-08-15 12:06:32.493 DEBUG MBP-Smilyk --- [io-8080-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Email Sent!"]
+2019-08-15 12:06:32.494 DEBUG MBP-Smilyk --- [io-8080-exec-10] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2019-08-15 12:06:33.373 DEBUG MBP-Smilyk --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : GET "/sendHtmlEmail", parameters={}
+2019-08-15 12:06:33.374 DEBUG MBP-Smilyk --- [nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to java.lang.String com.example.email.SimpleEmailExampleController.sendSimpleEmail() throws javax.mail.MessagingException
+2019-08-15 12:06:35.359 DEBUG MBP-Smilyk --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-08-15 12:06:35.359 DEBUG MBP-Smilyk --- [nio-8080-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Email Sent!"]
+2019-08-15 12:06:35.360 DEBUG MBP-Smilyk --- [nio-8080-exec-2] o.s.w.s.DispatcherServlet                : Completed 200 OK
+2019-08-15 12:07:54.816  INFO MBP-Smilyk --- [       Thread-8] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
